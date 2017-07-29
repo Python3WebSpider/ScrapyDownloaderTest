@@ -8,3 +8,4 @@ class HttpbinSpider(scrapy.Spider):
 
     def parse(self, response):
         self.logger.debug(response.text)
+        self.logger.debug('Status Code: ' + str(response.status))
